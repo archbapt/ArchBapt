@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início | Seu Nome</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Seu Nome</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="loja.html">Loja</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Bem-vindo!</h2>
+      <p>Este é o site de arquitetura e arte de Seu Nome.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 - Seu Nome</p>
+  </footer>
+  <script src="carrinho.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector("nav ul");
+      menu.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
